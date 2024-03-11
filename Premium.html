@@ -1,65 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">        
-        <title>Premium cakes</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="slicknav.min.css">
-        <link rel="stylesheet" href="style1.css">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/b69e1b143f.js" crossorigin="anonymous"></script>
-        <style>
-           body{background-color: #ffebcd;font-family: 'Oswald', sans-serif;font-size: 15px;font-weight: 400; line-height: 1.5em;}
-            .inner_main_menu {margin: 0 auto; width: 1170px;}    
-            .inner_main_menu ul{margin: 0; padding: 80px 0 0; list-style: none;text-align: right;}    
-            .inner_main_menu ul li{float: none; display: inline-block;position: relative}    
-            .inner_main_menu ul li:nth-child(1){float: left;}    
-            .inner_main_menu ul li:nth-child(2){float: left;}    
-            .inner_main_menu ul li:nth-child(3){float: left;}    
-            .inner_main_menu ul li a{color: #3f1500; font-size: 20px; text-transform: uppercase;text-decoration: none; display: block;padding: 10px 20px;}    
-            .inner_main_menu ul li a:hover{color: #714b0a}  
-            .inner_main_menu ul li ul{position: absolute; top: 40px; left: -9999999px; width: 200px;background: #3f1500; padding: 0;}  
-            .inner_main_menu ul li:hover ul{left: 0px;}   
-            .inner_main_menu ul li ul li{float: left;width: 100%;text-align: left;}  
-            .inner_main_menu ul li ul li a{color: #714b0a;text-transform: capitalize; font-size: 15px;}  
-            .inner_main_menu ul li ul li a:hover{background: #714b0a; color: #080808;}  
-            .inner_main_menu ul li ul li ul{top: 0; left: -999999px;}  
-            .inner_main_menu ul li:hover ul li ul{top: 0; left: -999999px;}  
-            .inner_main_menu ul li ul li:hover ul{top: 0; left: 200px;}  
-            .inner_main_menu ul li:hover a{color: #714b0a}  
-            .inner_main_menu ul li:hover ul li a{color: #f9e2bd}  
-            .inner_main_menu ul li ul li a:hover{color: #3f1500}  
-            .inner_main_menu ul li ul li:hover a{background: #f9e2bd; color: #3f1500;}  
-            .inner_main_menu ul li ul li:hover ul li a{background: #3f1500; color: #f9e2bd;}  
-            .inner_main_menu ul li ul li ul li a:hover{background: #F9e2bd; color: #3f1500;}  
-            .slicknav_menu {
-              background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-              font-size: 16px;
-              padding: 5px;
-              display: none;    
-              position: fixed;
-              right: 0;
-              width: 100%;
-              z-index: 99999;
-            }
-            ul.slicknav_nav {
-              background: #262626 none repeat scroll 0 0;
-              left: 0;
-              position: absolute;
-              top: 0;
-              width: 80%;
-            }
-            .slicknav_btn {top: 35px;}
-            #main_menu{width: 100%; position: relative;}
-            .logo_area{width: 300px; height: 300px; position: absolute; left: 50%; top: 0; content: ""; margin-left:-150px; text-align: center; }
-            @media only screen and (min-width: 200px) and (max-width: 767px) { 
-                .slicknav_menu{display: block;}
-                .inner_main_menu{display: none;}
-                .logo_area {height: auto;left: 0;margin-left: 0;position: relative;top: 0;width: 130px;}
-                .logo_area img{height: auto;width: 100%;}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premium cakes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="slicknav.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b69e1b143f.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #ffebcd;
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5em;
+    }
+
+    .inner_main_menu {
+      margin: 0 auto;
+      width: 1170px;
+    }
+
+    .inner_main_menu ul {
+      margin: 0;
+      padding: 80px 0 0;
+      list-style: none;
+      text-align: right;
+    }
+
+    .inner_main_menu ul li {
+      float: none;
+      display: inline-block;
+      position: relative
+    }
+
+    .inner_main_menu ul li:nth-child(1) {
+      float: left;
+    }
+
+    .inner_main_menu ul li:nth-child(2) {
+      float: left;
+    }
+
+    .inner_main_menu ul li:nth-child(3) {
+      float: left;
+    }
+
+    .inner_main_menu ul li a {
+      color: #3f1500;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+    }
+
+    .inner_main_menu ul li a:hover {
+      color: #714b0a
+    }
+
+    .inner_main_menu ul li ul {
+      position: absolute;
+      top: 40px;
+      left: -9999999px;
+      width: 200px;
+      background: #3f1500;
+      padding: 0;
+    }
+
+    .inner_main_menu ul li:hover ul {
+      left: 0px;
+    }
+
+    .inner_main_menu ul li ul li {
+      float: left;
+      width: 100%;
+      text-align: left;
+    }
+
+    .inner_main_menu ul li ul li a {
+      color: #714b0a;
+      text-transform: capitalize;
+      font-size: 15px;
+    }
+
+    .inner_main_menu ul li ul li a:hover {
+      background: #714b0a;
+      color: #080808;
+    }
+
+    .inner_main_menu ul li ul li ul {
+      top: 0;
+      left: -999999px;
+    }
+
+    .inner_main_menu ul li:hover ul li ul {
+      top: 0;
+      left: -999999px;
+    }
+
+    .inner_main_menu ul li ul li:hover ul {
+      top: 0;
+      left: 200px;
+    }
+
+    .inner_main_menu ul li:hover a {
+      color: #714b0a
+    }
+
+    .inner_main_menu ul li:hover ul li a {
+      color: #f9e2bd
+    }
+
+    .inner_main_menu ul li ul li a:hover {
+      color: #3f1500
+    }
+
+    .inner_main_menu ul li ul li:hover a {
+      background: #f9e2bd;
+      color: #3f1500;
+    }
+
+    .inner_main_menu ul li ul li:hover ul li a {
+      background: #3f1500;
+      color: #f9e2bd;
+    }
+
+    .inner_main_menu ul li ul li ul li a:hover {
+      background: #F9e2bd;
+      color: #3f1500;
+    }
+
+    .slicknav_menu {
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+      font-size: 16px;
+      padding: 5px;
+      display: none;
+      position: fixed;
+      right: 0;
+      width: 100%;
+      z-index: 99999;
+    }
+
+    ul.slicknav_nav {
+      background: #262626 none repeat scroll 0 0;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 80%;
+    }
+
+    .slicknav_btn {
+      top: 35px;
+    }
+
+    #main_menu {
+      width: 100%;
+      position: relative;
+    }
+
+    .logo_area {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      content: "";
+      margin-left: -150px;
+      text-align: center;
+    }
+
+    @media only screen and (min-width: 200px) and (max-width: 767px) {
+      .slicknav_menu {
+        display: block;
+      }
+
+      .inner_main_menu {
+        display: none;
+      }
+
+      .logo_area {
+        height: auto;
+        left: 0;
+        margin-left: 0;
+        position: relative;
+        top: 0;
+        width: 130px;
+      }
+
+      .logo_area img {
+        height: auto;
+        width: 100%;
+      }
 
 
 
@@ -69,177 +206,177 @@
 
 
 
-            }
-        </style>
-    </head>
-    <body>
-        <div id="main_menu">
-            <div class="logo_area">
-                <a href=""><img src="Images/Logo2.png" alt="Logo"></a>
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main_menu">
+    <div class="logo_area">
+      <a href=""><img src="Images/Logo2.png" alt="Logo"></a>
+    </div>
+    <div class="inner_main_menu">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a>
+          <ul>
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Cakes</a>
+              <ul>
+                <li><a href="">Classic cakes</a></li>
+                <li><a href="">Chocolate cakes</a></li>
+                <li><a href="">Premium Cakes</a></li>
+                <li><a href="">Wedding cakes</a></li>
+              </ul>
+            </li>
+            <li><a href="">Donuts</a></li>
+            <li><a href="">Tarts</a></li>
+          </ul>
+        </li>
+        <li><a href="">Classes</a></li>
+        <li><a href="">Blog</a>
+          <ul>
+            <li><a href="">Newest collections</a></li>
+            <li><a href="">Happy bakers</a>
+              <ul>
+                <li><a href="">Baking students</a></li>
+                <li><a href="">First time bakers</a></li>
+                <li><a href="">Dessert stories</a></li>
+              </ul>
+            </li>
+
+            <li><a href="">Baking tips and tricks</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <body>
+    <div class="about">
+      <h1>Premium Cakes</h1>
+    </div>
+    <br>
+    <div class="txtslider">
+      <div class="item">
+        <img src="cake3/ffrrcake.jpeg" alt="ferrero rocher cake">
+        <h2>Ferrero rocher</h2>
+        <p>"Decadent chocolate cake filled with Ferrero Rocher goodness and topped with hazelnut chocolate ganache."</p>
+        <!--<span class="count">1</span>-->
+      </div>
+      <div class="item">
+        <img src="cake3/ctcake.jpeg" alt="chocolate truffle cake">
+        <h2>Chocolate Truffle</h2>
+        <p>"Rich chocolate layers filled with velvety truffle indulgence. A true heaven delight"</p>
+        <!--<span class="count">2</span>-->
+      </div>
+      <div class="item">
+        <img src="cake3/bluecc.jpeg" alt="blueberry cheesecake cake">
+        <h2>Bluberry Cheesecake</h2>
+        <p>"Creamy cheesecake base atop a buttery graham cracker crust, generously topped with a tangy blueberry
+          compote."</p>
+        <!--<span class="count">3</span>-->
+      </div>
+      <div class="item">
+        <img src="cake3/whitechcake.jpeg" alt="white forest cake">
+        <h2>White Forest</h2>
+        <p>"light vanilla sponge layers enveloped in creamy white chocolate mousse and adorned with juicy strawberries,
+          creating a symphony of flavors in every bite.""</p>
+        <!--<span class="count">4</span>-->
+      </div>
+    </div>
+  </body>
+  <div class="container-fluid mt-5">
+    <!-- Footer -->
+    <footer class=" foot text-center text-white" style="background-color: #3f1500">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-3">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="about.html" class="word text-white">About us</a>
+              </h6>
             </div>
-            <div class="inner_main_menu">
-                <ul id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="product.html">Product</a>
-                        <ul>
-                            <li><a href="">Cookies</a></li>
-                            <li><a href="">Cakes</a>
-                                <ul>
-                                    <li><a href="">Classic cakes</a></li>
-                                    <li><a href="">Chocolate cakes</a></li>
-                                    <li><a href="">Premium Cakes</a></li>
-                                    <li><a href="">Wedding cakes</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">Donuts</a></li>
-                            <li><a href="">Tarts</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Classes</a></li>
-                    <li><a href="">Blog</a>
-                        <ul>
-                            <li><a href="">Newest collections</a></li>
-                            <li><a href="">Happy bakers</a>
-                                <ul>
-                                    <li><a href="">Baking students</a></li>
-                                    <li><a href="">First time bakers</a></li>
-                                    <li><a href="">Dessert stories</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li><a href="">Baking tips and tricks</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="product.html" class="word text-white">Products</a>
+              </h6>
             </div>
-        </div>
-        <body>
-            <div class="about">
-              <h1>Premium Cakes</h1>
-              </div>
-              <br>
-              <div class="txtslider">
-                <div class="item">
-                  <img src="cake3/ffrrcake.jpeg" alt="ferrero rocher cake">
-                  <h2>Ferrero rocher</h2>
-                  <p>"Decadent chocolate cake filled with Ferrero Rocher goodness and topped with hazelnut chocolate ganache."</p>
-                  <!--<span class="count">1</span>-->
-                </div>
-                <div class="item">
-                  <img src="cake3/ctcake.jpeg" alt="chocolate truffle cake">
-                  <h2>Chocolate Truffle</h2>
-                  <p>"Rich chocolate layers filled with velvety truffle indulgence. A true heaven delight"</p>
-                  <!--<span class="count">2</span>-->
-                </div>
-                <div class="item">
-                  <img src="cake3/bluecc.jpeg" alt="blueberry cheesecake cake">
-                  <h2>Bluberry Cheesecake</h2>
-                  <p>"Creamy cheesecake base atop a buttery graham cracker crust, generously topped with a tangy blueberry compote."</p>
-                  <!--<span class="count">3</span>-->
-                </div>
-                <div class="item">
-                  <img src="cake3/whitechcake.jpeg" alt="white forest cake">
-                  <h2>White Forest</h2>
-                  <p>"light vanilla sponge layers enveloped in creamy white chocolate mousse and adorned with juicy strawberries, creating a symphony of flavors in every bite.""</p>
-                  <!--<span class="count">4</span>-->
-                </div>
-              </div>
-        </body>
-        <div class="container-fluid mt-5">
-            <!-- Footer -->
-            <footer class=" foot text-center text-white" style="background-color: #3f1500">
-              <!-- Grid container -->
-              <div class="container">
-                <!-- Section: Links -->
-                <section class="mt-3">
-                  <!-- Grid row-->
-                  <div class="row text-center d-flex justify-content-center pt-5">
-                    <!-- Grid column -->
-                    <div class="col-md-2">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="about.html" class="word text-white">About us</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-          
-                    <!-- Grid column -->
-                    <div class="col-md-2">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="product.html" class="word text-white">Products</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-          
-                    <!-- Grid column -->
-                    <div class="col-md-2">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" class="word text-white">Blog</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-          
-                    <!-- Grid column -->
-                    <div class="col-md-2">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" class="word text-white">Classes</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-          
-                    <!-- Grid column -->
-                    <div class="col-md-2">
-                      <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" class="word text-white">Testimonials</a>
-                      </h6>
-                    </div>
-                    <!-- Grid column -->
-                  </div>
-                  <!-- Grid row-->
-                </section>
-                <!-- Section: Links -->
-          
-                <hr class="my-2.5" />
-          
-                <!-- Section: Text -->
-                <section class="mb-3">
-                  <div class="row d-flex justify-content-center">
-                    <div class="word col-lg-8">
-                      <p>
-                        "Thanks for visiting BlissBake! Explore guilt-free treats. Contact us for orders and follow us for updates. Join our community!
-                      </p>
-                    </div>
-                  </div>
-                </section>
-                <!-- Section: Text -->
-                <!-- Section: Social -->
-              </div>
-              <!-- Grid container -->
-          
-              <!-- Copyright -->
-              <div
-                   class="foot-custom text-center p-3"
-                   style="background-color: rgba(0, 0, 0, 0.2)"
-                   >
-                © 2024 Copyright:
-                <a class="text-white" href="#"
-                   >Blissbake</a
-                  >
-              </div>
-              <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="word text-white">Blog</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="word text-white">Classes</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="word text-white">Testimonials</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
           </div>
-          <!-- End of .container -->
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="jquery.slicknav.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#menu').slicknav();
-        });
-    </script>
-    </body>
-        
+        <hr class="my-2.5" />
+
+        <!-- Section: Text -->
+        <section class="mb-3">
+          <div class="row d-flex justify-content-center">
+            <div class="word col-lg-8">
+              <p>
+                "Thanks for visiting BlissBake! Explore guilt-free treats. Contact us for orders and follow us for
+                updates. Join our community!
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="foot-custom text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="#">Blissbake</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="jquery.slicknav.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#menu').slicknav();
+    });
+  </script>
+</body>
+
 </html>
