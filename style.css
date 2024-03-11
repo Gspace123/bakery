@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+.navbar{
+    background-color: rgb(255, 235, 205);
+}
+
+.navbar img{
+    display: block;
+    padding-top: 5px;
+    margin-left: 500px;
+    margin-right: 500px;
+    width: auto;
+}
+.navbar-custom{
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav-item{
+    margin-right: 40px;
+}
+.Searchb{
+    width: 250px;
+    height: 40px;
+    align-self: center;
+    justify-content: left;
+}
+.btn{
+    width: 80px;
+    height:40px;
+    margin-left: 5px;
+    background-color: rgb(255, 235, 205);
+    color: #080808;
+    border-color: #080808;
+}
+.btn:hover{
+    background-color: #714b0a;
+    color: #fff;
+}
+.Order{
+    width: 150px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: #3f1500;
+    color: #FFFFFF;
+    border-color: #714b0a;
+}
+.Search{
+    margin-left: 600px;
+}
+.hero{
+    background-color: rgb(255, 235, 205);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 84rem;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+.usp{
+    background-color: rgb(255, 235, 205);
+    height: auto;
+    text-align: center;
+}
+.usp h1{
+    font-family: "Condiment", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: #3f1500;
+}
+/*.column{
+    background-color: #714b0a;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+}
+.usp{
+    background-color: rgb(255, 235, 205);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+.item{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background-color: #3f1500;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+#next #prev{
+    position: absolute;
+    top: 40%;
+    color: #714b0a;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    left: 50px;
+
+}
+#next{
+    left: unset;
+    right: 50px;
+
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+    transition: all 0.3 linear;
+}
+.txtslider{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9e2bd;
+    border-radius: 15px; 
+}
+.item{
+    width: 300px;
+    height: 455px;
+    background-color: rgb(255, 235, 205);
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 80px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.item h2{
+    font-size: 32px;
+    padding: 20px 0;
+    color: #3f1500;
+}
+.item p{
+    font-size: 15px;
+    color: #a26d11;
+}
+.item::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.item::after{
+    width: 100%;
+    height: 100%;
+    background-color: #3f1500;
+    background-image: linear-gradient(45deg, #3f1500 0%, #f5c730 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    clip-path: circle(20% at 90% 10%);
+    transition: 0.2s;
+}
+.item .count{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #3f1500;
+}
+.item:nth-child(2)::after{
+    background-color: #0093E9;
+    background-image: linear-gradient(0deg, #3f1500 0%, #f5c730 100%);
+}
+
+.item:nth-child(3)::after{
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #3f1500 0%, #f5c730 100%);
+}
+.item:hover:after{
+    clip-path: circle(100%);
+}
+.item:hover h2{
+    color: #f9e2bd;
+    font-size: 36px;
+    font-weight: 800;
+}
+.item:hover p{
+    color: #f9e2bd;
+    font-size: 18px;
+    font-weight: 300;
+}
+.footer{
+    margin-top: 80px;
+    max-width: 100%;
+    padding: 70px 15%;
+    background: #3f1500;
+    color: #f9e2bd;
+    display: flex;
+    border-radius: 15px;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 4;
+}
+.footer div h3{
+    font-weight: 800;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #f9e2bd;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #f9e2bd;
+    color: #f9e2bd;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.col-3 p{
+    font-size: 20px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons i{
+    font-size: 35px;
+    margin: 10px;
+    cursor: pointer;
+}
