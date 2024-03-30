@@ -12,29 +12,109 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b69e1b143f.js" crossorigin="anonymous"></script>
         <style>
-           body{background-color: #ffebcd;font-family: 'Oswald', sans-serif;font-size: 15px;font-weight: 400; line-height: 1.5em;}
-            .inner_main_menu {margin: 0 auto; width: 1170px;}    
-            .inner_main_menu ul{margin: 0; padding: 80px 0 0; list-style: none;text-align: right;}    
-            .inner_main_menu ul li{float: none; display: inline-block;position: relative}    
+           body{
+            background-color: #ffebcd;
+            font-family: 'Oswald', sans-serif;
+            font-size: 15px;
+            font-weight: 400; 
+            line-height: 1.5em;
+          }
+
+            .inner_main_menu {
+              margin: 0 auto; 
+              width: 1170px;
+            }  
+
+            .inner_main_menu ul{
+              margin: 0; 
+              padding: 80px 0 0; 
+              list-style: none;
+              text-align: right;
+            }
+
+            .inner_main_menu ul li{
+              float: none; 
+              display: 
+              inline-block;
+              position: relative
+            }    
             .inner_main_menu ul li:nth-child(1){float: left;}    
             .inner_main_menu ul li:nth-child(2){float: left;}    
-            .inner_main_menu ul li:nth-child(3){float: left;}    
-            .inner_main_menu ul li a{color: #3f1500; font-size: 20px; text-transform: uppercase;text-decoration: none; display: block;padding: 10px 20px;}    
-            .inner_main_menu ul li a:hover{color: #714b0a}  
-            .inner_main_menu ul li ul{position: absolute; top: 40px; left: -9999999px; width: 200px;background: #3f1500; padding: 0;}  
-            .inner_main_menu ul li:hover ul{left: 0px;}   
-            .inner_main_menu ul li ul li{float: left;width: 100%;text-align: left;}  
-            .inner_main_menu ul li ul li a{color: #714b0a;text-transform: capitalize; font-size: 15px;}  
-            .inner_main_menu ul li ul li a:hover{background: #714b0a; color: #080808;}  
-            .inner_main_menu ul li ul li ul{top: 0; left: -999999px;}  
-            .inner_main_menu ul li:hover ul li ul{top: 0; left: -999999px;}  
-            .inner_main_menu ul li ul li:hover ul{top: 0; left: 200px;}  
-            .inner_main_menu ul li:hover a{color: #714b0a}  
-            .inner_main_menu ul li:hover ul li a{color: #f9e2bd}  
-            .inner_main_menu ul li ul li a:hover{color: #3f1500}  
-            .inner_main_menu ul li ul li:hover a{background: #f9e2bd; color: #3f1500;}  
-            .inner_main_menu ul li ul li:hover ul li a{background: #3f1500; color: #f9e2bd;}  
-            .inner_main_menu ul li ul li ul li a:hover{background: #F9e2bd; color: #3f1500;}  
+            .inner_main_menu ul li:nth-child(3){float: left;} 
+
+            .inner_main_menu ul li a{
+              color: #3f1500; 
+              font-size: 20px; 
+              text-transform: uppercase;
+              text-decoration: none; 
+              display: block;
+              padding: 10px 20px;
+            }
+
+            .inner_main_menu ul li a:hover{
+              color: #714b0a
+            }
+
+            .inner_main_menu ul li ul{
+              position: absolute; 
+              top: 40px; 
+              left: -9999999px; 
+              width: 200px;
+              background: #3f1500; 
+              padding: 0;
+            }
+
+            .inner_main_menu ul li:hover ul{left: 0px;}
+
+            .inner_main_menu ul li ul li{
+              float: left;
+              width: 100%;
+              text-align: left;
+            }
+
+            .inner_main_menu ul li ul li a{
+              color: #714b0a;
+              text-transform: capitalize; 
+              font-size: 15px;
+            }
+
+            .inner_main_menu ul li ul li a:hover{
+              background: #714b0a; 
+              color: #080808;
+            }
+
+            .inner_main_menu ul li ul li ul{
+              top: 0; 
+              left: -999999px;
+            }
+
+            .inner_main_menu ul li:hover ul li ul{
+              top: 0; 
+              left: -999999px;
+            }
+
+            .inner_main_menu ul li ul li:hover ul{
+              top: 0; 
+              left: 200px;
+            }
+
+            .inner_main_menu ul li:hover a{
+              color: #714b0a}  
+            .inner_main_menu ul li:hover ul li a{
+              color: #f9e2bd}  
+            .inner_main_menu ul li ul li a:hover{
+              color: #3f1500}  
+            .inner_main_menu ul li ul li:hover a{
+              background: #f9e2bd; 
+              color: #3f1500;}  
+            .inner_main_menu ul li ul li:hover ul li a{
+              background: #3f1500; 
+              color: #f9e2bd;}  
+            .inner_main_menu ul li ul li ul li a:hover{
+              background: #F9e2bd; 
+              color: #3f1500;
+            }
+
             .slicknav_menu {
               background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
               font-size: 16px;
@@ -53,8 +133,19 @@
               width: 80%;
             }
             .slicknav_btn {top: 35px;}
-            #main_menu{width: 100%; position: relative;}
-            .logo_area{width: 300px; height: 300px; position: absolute; left: 50%; top: 0; content: ""; margin-left:-150px; text-align: center; }
+            #main_menu{
+              width: 100%; 
+              position: relative;
+            }
+            .logo_area{
+              width: 300px; 
+              height: 300px; 
+              position: absolute; 
+              left: 50%; 
+              top: 0; 
+              content: ""; 
+              margin-left:-150px; 
+              text-align: center; }
             @media only screen and (min-width: 200px) and (max-width: 767px) { 
                 .slicknav_menu{display: block;}
                 .inner_main_menu{display: none;}
@@ -83,17 +174,17 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="product.html">Product</a>
                         <ul>
-                            <li><a href="">Cookies</a></li>
-                            <li><a href="">Cakes</a>
+                            <li><a href="cookies.html">Cookies</a></li>
+                            <li><a href="classic.html">Cakes</a>
                                 <ul>
-                                    <li><a href="">Classic cakes</a></li>
-                                    <li><a href="">Chocolate cakes</a></li>
-                                    <li><a href="">Premium Cakes</a></li>
-                                    <li><a href="">Wedding cakes</a></li>
+                                    <li><a href="classic.html">Classic cakes</a></li>
+                                    <li><a href="#">Chocolate cakes</a></li>
+                                    <li><a href="Premium.html">Premium Cakes</a></li>
+                                    <li><a href="wedding.html">Wedding cakes</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Donuts</a></li>
-                            <li><a href="">Tarts</a></li>
+                            <li><a href="donuts.html">Donuts</a></li>
+                            <li><a href="brownies.html">Brownies</a></li>
                         </ul>
                     </li>
                     <li><a href="">Classes</a></li>
@@ -122,27 +213,27 @@
               <br>
               <div class="txtslider">
                 <div class="item">
-                  <img src="cake3/ffrrcake.jpeg" alt="ferrero rocher cake">
-                  <h2>Ferrero rocher</h2>
-                  <p>"Decadent chocolate cake filled with Ferrero Rocher goodness and topped with hazelnut chocolate ganache."</p>
+                  <img src="Images/dcfcake.png" alt="dark chocolate fudge cake">
+                  <h2>Dark Chocolate Fudge Cake</h2>
+                  <p>Indulge in velvety richness with our decadent dark chocolate fudge cake</p>
                   <!--<span class="count">1</span>-->
                 </div>
                 <div class="item">
-                  <img src="cake3/ctcake.jpeg" alt="chocolate truffle cake">
-                  <h2>Chocolate Truffle</h2>
-                  <p>"Rich chocolate layers filled with velvety truffle indulgence. A true heaven delight"</p>
+                  <img src="Images/crcake.jpeg" alt="chocolate raspberry cake">
+                  <h2>Chocolate Raspberry Truffle Cake</h2>
+                  <p>Layers of moist chocolate cake infused with tangy raspberry compote and enveloped in velvety chocolate ganache</p>
                   <!--<span class="count">2</span>-->
                 </div>
                 <div class="item">
-                  <img src="cake3/bluecc.jpeg" alt="blueberry cheesecake cake">
-                  <h2>Bluberry Cheesecake</h2>
-                  <p>"Creamy cheesecake base atop a buttery graham cracker crust, generously topped with a tangy blueberry compote."</p>
+                  <img src="Images/chpcake.jpeg" alt="chocolate hazelnut praline cake">
+                  <h2>Chocolate Hazelnut Praline Cake</h2>
+                  <p>Layers of rich chocolate cake filled with creamy hazelnut praline filling and topped with crunchy hazelnut pieces</p>
                   <!--<span class="count">3</span>-->
                 </div>
                 <div class="item">
-                  <img src="cake3/whitechcake.jpeg" alt="white forest cake">
-                  <h2>White Forest</h2>
-                  <p>"light vanilla sponge layers enveloped in creamy white chocolate mousse and adorned with juicy strawberries, creating a symphony of flavors in every bite.""</p>
+                  <img src="Images/chocmint.jpeg" alt="chocolate mint mousse cake">
+                  <h2>Chocolate Mint Mousse Cake</h2>
+                  <p>Chocolate sponge cake filled with smooth, airy mint-infused mousse and finished with a decadent chocolate ganache glaze</p>
                   <!--<span class="count">4</span>-->
                 </div>
               </div>

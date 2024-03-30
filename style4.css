@@ -1,0 +1,112 @@
+.about{
+    border-top: 5px solid #080808;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 70px;
+    height: 60px;
+    padding: 25px 0 10px 0;
+    background-color: #f9e2bd;
+    border-radius: 20px 20px 20px 20px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about h1{
+    text-align: center;
+    font-family: "Condiment", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+.about:hover{
+    color: #ffebcd;
+    cursor: pointer;
+    background-image: linear-gradient(120deg, #3f1500, #714B0A);
+}
+.txtslider{
+    max-width: 91%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f1500;
+    border-radius: 15px;
+}
+.content img{
+    max-width: 100%;
+    border: 10px solid #f9e2bd;
+    border-bottom: 50px solid #f9e2bd;
+    border-radius: 10px;
+}
+.text{
+    width: 91%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3f1500;
+    border-radius: 15px;
+}
+.text h1{
+    color: #3f1500;
+    font-size: 100px;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 5%;
+    padding-top: 40px;
+}
+.text p{
+    color: #3f1500;
+    width: 70%;
+    font-size: 18px;
+    font-family: "Oswald";
+    font-weight: 100;
+    padding-right: 5vh;
+    line-height: 25px;
+    margin-left: 3%;
+}
+hr{
+    color: #f9e2bd;
+    height: 3px;
+}
+.box{
+    background-color: #ffebcd;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 10px 10px 17px -4px rgba(0,0,0,0.53);
+}
+
+.talk{
+    max-width: 91%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f1500;
+    border-radius: 15px; 
+}
+.talk h1{
+    color: #ffebcd;
+    font-size: 5vh;
+    font-family: "Oswald";
+}
+.talk h2{
+    color: #ffebcd;
+    font-size: 1.5rem;
+    font-family: "Oswald";
+    line-height: 28px;
+}
+.social-icons{
+    color: #ffebcd;
+    font-size: 23px;
+    letter-spacing: 10px;
+}
