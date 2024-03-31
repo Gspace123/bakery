@@ -14,7 +14,7 @@
     text-align: center;
     font-family: "Condiment", sans-serif;
     font-weight: 600;
-    font-size: 42px;
+    font-size: 48px;
     letter-spacing: 1px;
 }
 .about:hover{
@@ -109,4 +109,16 @@ hr{
     color: #ffebcd;
     font-size: 23px;
     letter-spacing: 10px;
+}
+.foot{
+    border-radius: 15px 15px 0 0;
+    font-family: "Geneva";
+    color: #f9e2bd;
+}
+.word{
+    font-size: 17px;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: "Geneva";
+    color: #f9e2bd;
 }

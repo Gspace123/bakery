@@ -1,51 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
-    <link rel="stylesheet" href="slicknav.min.css">
-    <script src="https://kit.fontawesome.com/b69e1b143f.js" crossorigin="anonymous"></script>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
+  <link rel="stylesheet" href="slicknav.min.css">
+  <script src="https://kit.fontawesome.com/b69e1b143f.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #ffebcd;
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5em;
+    }
+
+    .inner_main_menu {
+      margin: 0 auto;
+      width: 1170px;
+    }
+
+    .inner_main_menu ul {
+      margin: 0;
+      padding: 80px 0 0;
+      list-style: none;
+      text-align: right;
+      border-radius: 20px;
+    }
+
+    .inner_main_menu ul li {
+      float: none;
+      display: inline-block;
+      position: relative
+    }
+
+    .inner_main_menu ul li:nth-child(1) {
+      float: left;
+    }
+
+    .inner_main_menu ul li:nth-child(2) {
+      float: left;
+    }
+
+    .inner_main_menu ul li:nth-child(3) {
+      float: left;
+    }
+
+    .inner_main_menu ul li a {
+      color: #3f1500;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+
+    .inner_main_menu ul li a:hover {
+      color: #714b0a
+    }
+
+    .inner_main_menu ul li ul {
+      position: absolute;
+      top: 40px;
+      left: -9999999px;
+      width: 200px;
+      background: #3f1500;
+      padding: 0;
+    }
+
+    .inner_main_menu ul li:hover ul {
+      left: 0px;
+    }
+
+    .inner_main_menu ul li ul li {
+      float: left;
+      width: 100%;
+      text-align: left;
+    }
+
+    .inner_main_menu ul li ul li a {
+      color: #714b0a;
+      text-transform: capitalize;
+      font-size: 15px;
+    }
+
+    .inner_main_menu ul li ul li a:hover {
+      background: #714b0a;
+      color: #080808;
+    }
+
+    .inner_main_menu ul li ul li ul {
+      top: 0;
+      left: -999999px;
+    }
+
+    .inner_main_menu ul li:hover ul li ul {
+      top: 0;
+      left: -999999px;
+    }
+
+    .inner_main_menu ul li ul li:hover ul {
+      top: 0;
+      left: 200px;
+    }
+
+    .inner_main_menu ul li:hover a {
+      color: #714b0a
+    }
+
+    .inner_main_menu ul li:hover ul li a {
+      color: #f9e2bd
+    }
+
+    .inner_main_menu ul li ul li a:hover {
+      color: #3f1500
+    }
+
+    .inner_main_menu ul li ul li:hover a {
+      background: #f9e2bd;
+      color: #3f1500;
+    }
+
+    .inner_main_menu ul li ul li:hover ul li a {
+      background: #3f1500;
+      color: #f9e2bd;
+    }
+
+    .inner_main_menu ul li ul li ul li a:hover {
+      background: #F9e2bd;
+      color: #3f1500;
+    }
+
+    .slicknav_menu {
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+      font-size: 16px;
+      padding: 5px;
+      display: none;
+      position: fixed;
+      right: 0;
+      width: 100%;
+      z-index: 99999;
+    }
+
+    ul.slicknav_nav {
+      background: #262626 none repeat scroll 0 0;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 80%;
+    }
+
+    .slicknav_btn {
+      top: 35px;
+    }
+
+    #main_menu {
+      width: 100%;
+      position: relative;
+    }
+
+    .logo_area {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      content: "";
+      margin-left: -150px;
+      text-align: center;
+    }
+
+    @media only screen and (min-width: 200px) and (max-width: 767px) {
+      .slicknav_menu {
+        display: block;
+      }
+
+      .inner_main_menu {
+        display: none;
+      }
+
+      .logo_area {
+        height: 200px;
+        left: 0;
+        margin-left: 0;
+        position: relative;
+        top: 100;
+        width: 450px;
+      }
+
+      .logo_area img {
+        max-height: 200px;
+        width: 100%;
+        padding: 35px 10px 0px 130px;
+      }
+
+
+
+
+
+
+
+
+
+    }
+  </style>
+</head>
+
 <body>
-    <!--Container for logo-->
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <img src="Images/Logo2.png" alt="Image of Logo">
-        </div>
-      </nav>
-    <!--Navbar Container
-    <nav class="navbar navbar-custom navbar-expand-xl navbar-dark bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="abt-class nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <form class=" Search d-flex me-auto">
-              <input class="Searchb form-control" type="text" placeholder="Search">
-              <button class="btn btn-primary" type="button">Search</button>
-              <button class="Order btn" type="button">Order Now</button>
-            </form>
-          </div>
-        </div>
-    </nav>-->
+  <div id="main_menu">
+    <div class="logo_area">
+      <a href=""><img src="Images/Logo2.png" alt="Logo"></a>
+    </div>
+    <div class="inner_main_menu">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a>
+          <ul>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="#">Cakes</a>
+              <ul>
+                <li><a href="classic.html">Classic cakes</a></li>
+                <li><a href="chocolate.html">Chocolate cakes</a></li>
+                <li><a href="Premium.html">Premium Cakes</a></li>
+                <li><a href="wedding.html">Wedding cakes</a></li>
+              </ul>
+            </li>
+            <li><a href="donuts.html">Donuts</a></li>
+            <li><a href="brownies.html">Brownies</a></li>
+          </ul>
+        </li>
+        <li><a href="Classes.html">Classes</a></li>
+        <li><a href="#">Blog</a>
+          <ul>
+
+            <li><a href="tips.html">Baking tips and tricks</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <br>
   <!--Options for products -->
-   <section class=" hero container-fluid">
+  <section class=" hero container-fluid">
     <div class="slider-wrapper">
       <div class="slider">
         <img id="#slide1" src="Images/cake1 v1.jpeg" alt="cake">
@@ -58,60 +263,120 @@
         <a href="#slide3"></a>
       </div>
     </div>
-   </section>
+  </section>
+  <br>
   <div class="usp container-fluid p-5">
     <h1>What can you expect from BlissBake?</h1>
     <div class="txtslider">
       <div class="item">
         <h2>Premium Ingredients</h2>
-        <p> We exclusively use high quality, wholesome ingredients, including whole grains, natural sweeteners, and plant- based alternatives, ensuring every bite is nourishing and delicious</p>
+        <p> We exclusively use high quality, wholesome ingredients, including whole grains, natural sweeteners, and
+          plant- based alternatives, ensuring every bite is nourishing and delicious</p>
         <span class="count">1</span>
       </div>
       <div class="item">
         <h2>Health Conscious Approach</h2>
-        <p>Our bakery is committed to health - conscious baking practices, with a focus on no refined flour and no sugar added, providing guilt - free treats that satisfy both taste buds and dietary needs</p>
+        <p>Our bakery is committed to health - conscious baking practices, with a focus on no refined flour and no sugar
+          added, providing guilt - free treats that satisfy both taste buds and dietary needs</p>
         <span class="count">2</span>
       </div>
       <div class="item">
         <h2>Innovative Creations</h2>
-        <p>Diverse range of baked goods, from gluten-free muffins sweetened with dates to vegan brownies made with almond flour, offering something delightful for everyone</p>
+        <p>Diverse range of baked goods, from gluten-free muffins sweetened with dates to vegan brownies made with
+          almond flour, offering something delightful for everyone</p>
         <span class="count">3</span>
       </div>
       <div class="item">
         <h2>Nourishing Indulgence</h2>
-        <p>Sources of wholesome indugence, allowing you to enjoy the pleasure of eating without compromising on your health</p>
+        <p>Sources of wholesome indugence, allowing you to enjoy the pleasure of eating without compromising on your
+          health</p>
         <span class="count">4</span>
       </div>
     </div>
-  <!--footer-->
-  <div class="footer">
-    <div class="col-1">
-      <h3>LINKS</h3>
-      <a href="#">About</a>
-      <a href="#">Product</a>
-      <a href="#">Contact</a>
+    <div class="container-fluid mt-5">
+      <!-- Footer -->
+      <footer class="foot text-left" style="background-color: #3f1500">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-3">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="about.html" class="word">About us</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="product.html" class="word">Products</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="tips.html" class="word">Blog</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="Classes.html" class="word">Classes</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="testimonial.html" class="word">Testimonials</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+
+          <hr class="my-2.5" />
+
+          <!-- Section: Text -->
+          <section class="mb-3">
+            <div class="row d-flex justify-content-center">
+              <div class="word col-lg-8">
+                <p>
+                  "Thanks for visiting BlissBake! Explore guilt-free treats. Contact us for orders and follow us for
+                  updates. Join our community!
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="word foot-custom text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2024 Copyright:
+          <a class="word" href="#">Blissbake</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
     </div>
-    <div class="col-2">
-      <h3>NEWSLETTER</h3>
-      <form>
-        <input type="email" placeholder="Your Email address" required>
-        <br>
-        <button type="submit">SUBSCRIBE NOW</button>
-      </form>
-    </div>
-    <div class="col-3">
-      <h3>CONTACT</h3>
-      <P>123, XYZ Road, BSK 3<br>Bangalore, Karnataka, IN</P>
-      <div class="social-icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-pinterest"></i>
-      </div>
-    </div>
-  </div>
+    <!-- End of .container -->
 </body>
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="app.js"></script>
+
 </html>
