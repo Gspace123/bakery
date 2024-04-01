@@ -44,14 +44,21 @@ body {
     font-size: 48px;
     margin-top: 35px;
     padding-top: 20px;
+    padding-left: 30px;
     letter-spacing: 25px;
-    color: #ffebcd; 
+    color: #f9e2bd; 
 }
-.social-icons img:hover{
+.fa:hover{
     color: #f9e2bd;
-    font-size: 52px;
+    font-size: 48px;
     cursor: pointer;
 }
+.fa{
+    color: #f9e2bd;
+    text-decoration: none !important;
+    font-size: 24px;
+}
+
 .single-form{
     background: #fff;
     border-radius: 15px 10px 10px 15px;
@@ -148,6 +155,18 @@ body {
 .foot-custom{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+.foot{
+    border-radius: 15px 15px 0 0;
+    font-family: "Geneva";
+    color: #f9e2bd;
+}
+.word{
+    font-size: 17px;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: "Geneva";
+    display: flex;
 }
 
 
