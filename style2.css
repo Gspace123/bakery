@@ -22,7 +22,7 @@ body {
     
 }
 .left h2 {
-	font-family: "poppins";
+	font-family: "Geneva";
 	color: #ffebcd;
 	font-weight: 700;
 	font-size: 48px;
@@ -35,9 +35,9 @@ body {
 }
 .left p{
     color: #ffebcd;
-    font-size: 32px;
+    font-size: 72px;
     font-weight: lighter;
-    font-family: "Oswald";
+    font-family: "Geneva";
     margin: 30px 10px 15px 20px;  
 }
 .social-icons{
@@ -85,7 +85,7 @@ body {
     font-size: 20px;
     font-weight: 400;
     color: #3f1500;
-    font-family: "Oswald";
+    font-family: "Geneva";
 }
 .right button {
 	border: none;
@@ -98,6 +98,7 @@ body {
 	font-size: 16px;
 	margin-top: 20px;
 	cursor: pointer;
+    font-family: "Geneva";
 }
 .right button:hover{
     background-color: #3f1500;
@@ -147,26 +148,27 @@ body {
 .foot{
     margin: auto;
     position: sticky;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px 15px 0 0;
+    font-family: "Geneva";
+    color: #f9e2bd;
+    text-decoration: none;
 }
 .foot-custom{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-.foot{
-    border-radius: 15px 15px 0 0;
-    font-family: "Geneva";
-    color: #f9e2bd;
-}
+
 .word{
     font-size: 17px;
     text-decoration: none !important;
     text-transform: capitalize;
     font-family: "Geneva";
     display: flex;
+    color: #ffebcd;
+}
+.word:hover{
+    color: #ffebcd;
+    font-size: 20px;
 }
 
 

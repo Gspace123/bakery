@@ -15,7 +15,7 @@
   <style>
     body {
       background-color: #ffebcd;
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Geneva', sans-serif;
       font-size: 15px;
       font-weight: 400;
       line-height: 1.5em;
@@ -31,6 +31,7 @@
       padding: 80px 0 0;
       list-style: none;
       text-align: right;
+      border-radius: 20px;
     }
 
     .inner_main_menu ul li {
@@ -58,6 +59,7 @@
       text-decoration: none;
       display: block;
       padding: 10px 20px;
+      border-radius: 20px;
     }
 
     .inner_main_menu ul li a:hover {
@@ -221,17 +223,17 @@
         <li><a href="about.html">About</a></li>
         <li><a href="product.html">Product</a>
           <ul>
-            <li><a href="">Cookies</a></li>
-            <li><a href="">Cakes</a>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="#">Cakes</a>
               <ul>
-                <li><a href="">Classic cakes</a></li>
-                <li><a href="">Chocolate cakes</a></li>
-                <li><a href="">Premium Cakes</a></li>
-                <li><a href="">Wedding cakes</a></li>
+                <li><a href="classic.html">Classic cakes</a></li>
+                <li><a href="chocolate.html">Chocolate cakes</a></li>
+                <li><a href="#">Premium Cakes</a></li>
+                <li><a href="wedding.html">Wedding cakes</a></li>
               </ul>
             </li>
-            <li><a href="">Donuts</a></li>
-            <li><a href="">Tarts</a></li>
+            <li><a href="donuts.html">Donuts</a></li>
+            <li><a href="brownies.html">Brownies</a></li>
           </ul>
         </li>
         <li><a href="Classes.html">Classes</a></li>
@@ -245,6 +247,8 @@
       </ul>
     </div>
   </div>
+  <br>
+  <br>
 
   <body>
     <div class="about">
@@ -252,37 +256,36 @@
     </div>
     <br>
     <div class="txtslider">
-      <div class="item">
+      <div class="choc item">
         <img src="Images/ffrr.jpeg" alt="ferrero rocher cake">
         <h2>Ferrero rocher</h2>
         <p>"Decadent chocolate cake filled with Ferrero Rocher goodness and topped with hazelnut chocolate ganache."</p>
         <!--<span class="count">1</span>-->
       </div>
-      <div class="item">
+      <div class="choc item">
         <img src="cake3/ctcake.jpeg" alt="chocolate truffle cake">
         <h2>Chocolate Truffle</h2>
         <p>"Rich chocolate layers filled with velvety truffle indulgence. A true heaven delight"</p>
         <!--<span class="count">2</span>-->
       </div>
-      <div class="item">
+      <div class="choc item">
         <img src="cake3/bluecc.jpeg" alt="blueberry cheesecake cake">
-        <h2>Bluberry Cheesecake</h2>
-        <p>"Creamy cheesecake base atop a buttery graham cracker crust, generously topped with a tangy blueberry
+        <h2>Blueberry cheesecake</h2>
+        <p>"Creamy cheesecake base atop a cracker crust, generously topped with a tangy blueberry
           compote."</p>
         <!--<span class="count">3</span>-->
       </div>
-      <div class="item">
+      <div class="choc item">
         <img src="cake3/whitechcake.jpeg" alt="white forest cake">
         <h2>White Forest</h2>
-        <p>"light vanilla sponge layers enveloped in creamy white chocolate mousse and adorned with juicy strawberries,
-          creating a symphony of flavors in every bite.""</p>
+        <p>"Light vanilla sponge layers enveloped in creamy white chocolate mousse and adorned with juicy strawberries"</p>
         <!--<span class="count">4</span>-->
       </div>
     </div>
   </body>
   <div class="container-fluid mt-5">
     <!-- Footer -->
-    <footer class=" foot text-center text-white" style="background-color: #3f1500">
+    <footer class=" foot text-center" style="background-color: #3f1500">
       <!-- Grid container -->
       <div class="container">
         <!-- Section: Links -->
@@ -292,7 +295,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="about.html" class="word text-white">About us</a>
+                <a href="about.html" class="word">About us</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -300,7 +303,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="product.html" class="word text-white">Products</a>
+                <a href="product.html" class="word">Products</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -308,7 +311,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="word text-white">Blog</a>
+                <a href="tips.html" class="word">Blog</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -316,7 +319,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="word text-white">Classes</a>
+                <a href="Classes.html" class="word">Classes</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -324,7 +327,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="word text-white">Testimonials</a>
+                <a href="testimonial.html" class="word">Testimonials</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -354,7 +357,7 @@
       <!-- Copyright -->
       <div class="foot-custom text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2024 Copyright:
-        <a class="text-white" href="#">Blissbake</a>
+        <a class="foot" href="#">Blissbake</a>
       </div>
       <!-- Copyright -->
     </footer>
